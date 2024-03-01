@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-streamlit-app
+  labels:
+    app: my-streamlit-app
+spec:
+  replicas: 1  # Number of pods to create
+  selector:
+    matchLabels:
+      app: my-streamlit-app
+  template:
+    metadata:
+      labels:
+        app: my-streamlit-app
+    spec:
+      containers:
+      - name: my-streamlit-app
+        image: cbhatiaa/webapp  # Replace with the name of your Docker image
+        ports:
+        - containerPort: 8501
