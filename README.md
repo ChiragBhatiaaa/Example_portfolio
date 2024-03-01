@@ -21,4 +21,4 @@ How to Play:
 Running the App Locally:
 - Navigate to the project directory in your terminal.
 - Run pip install -r requirements.txt to install dependencies.
-- Start the application using streamlit run streamlit_app.py.
+- Start the application using streamlit run main.py.
